@@ -34,7 +34,7 @@ app.get("/", (req, res) =>{
 
 //Backend Ready 
 //create Account 
-app.post("/create-account", async (req, res)=>{
+app.post("http://localhost:8000/create-account", async (req, res)=>{
     const {fullName, email, password} = req.body;
 
     if(!fullName){
