@@ -138,7 +138,7 @@ app.get("/get-user", authenticateToken, async(req,res)=>{
 
 app.post("/add-note", authenticateToken, async(req, res)=>{
 
-    const {title, content, tags, color, titleFont, contentFont, tagFont,fontColor,fontColorContent } = req.body;
+    const {title, content, tags, color, titleFont, contentFont, tagFont,fontColor,fontColorContent , tagColorContent} = req.body;
     const {user} = req.user;
 
     if(!title){
